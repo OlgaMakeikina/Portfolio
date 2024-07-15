@@ -1,6 +1,6 @@
-body {
+ body {
   background-color: #252839;
-  }
+  } 
   #menu {
   z-index: 2;
   }
@@ -128,14 +128,13 @@ body {
   flex-wrap: wrap;
   }
   .about-text {
-  padding: 30px;
   flex: 1;
   } 
+
   #home h2 {
   font-size: 32px;
   color: #ffffff;
   font-family: 'Shippori Antique', sans-serif;
-  margin-top: 100px;
   }
   #home p {
   font-size: 24px;
@@ -156,12 +155,12 @@ body {
   font-weight: 650;
   font-family: 'Mochiy Pop One', sans-serif;
   color: #00dc82;
-  margin-top: -20px;
-  margin-right: 50px;
   }
   .tagcloud--item:hover {
   color: #ffdd1c;
   }
+
+
   .scroll {
   margin-top: 50px;
   margin-bottom: 100px;

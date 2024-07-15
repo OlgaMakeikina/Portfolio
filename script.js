@@ -1,10 +1,10 @@
 const myTags = [
   'JavaScript', 'CSS', 'HTML', 'API',
   'Bootstrap', 'WordPress', 'React',
-  'Figma', 'GSAP', 'Flexbox', 'Ajax',
+  'Figma', 'GSAP', 'Flexbox', 'Ajax', 'Node.js', 'Redux', 'Github'
   ];
   var tagCloud = TagCloud('.content', myTags,{
-  radius: 200,
+  radius: 300,
   maxSpeed: 'normal',
   initSpeed: 'slow',
   // 0 = top
@@ -13,6 +13,8 @@ const myTags = [
   direction: 135,
   keep: true
   });
+
+
   function menuOnClick() {
   document.getElementById("menu-bar").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");
