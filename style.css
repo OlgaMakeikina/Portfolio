@@ -1,0 +1,447 @@
+body {
+  background-color: #252839;
+  }
+  #menu {
+  z-index: 2;
+  }
+  #menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  }
+  .bar {
+  height: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  }
+  #bar1 {
+  transform: translateY(-4px);
+  }
+  #bar3 {
+  transform: translateY(4px);
+  }
+  .nav {
+  transition: 0.3s ease;
+  display: none;
+  }
+  .nav ul {
+  padding: 0 22px;
+  }
+  .nav li {
+  list-style: none;
+  padding: 12px 0;
+  }
+  .nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;    
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px #f5f5f7;
+  font-family: 'Mochiy Pop One', sans-serif;
+  }
+  ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+  }
+  ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr))
+  }
+  .menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+  }
+  .menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 100px;
+  background: radial-gradient(circle, #252839, #252839);
+  box-shadow: 2px 2px 10px #00dc82;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  }
+  .change {
+  display: block;
+  }
+  .change .bar {
+  background-color: #ffffff;
+  }
+  .change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+  }
+  .change #bar2 {
+  opacity: 0;
+  }
+  .change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+  }
+  .change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+  }
+  .btn {
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff6492;
+  border: none;
+  font-size: 20px;
+  font-family: 'Shippori Antique', sans-serif;
+  }
+  .btn a {
+  font-family: 'Shippori Antique', sans-serif;
+  } 
+  .btn:hover {
+  transition: 0.3s ease-in-out; 
+  background: linear-gradient(90deg, #00dc82, #ffdd1c, #00dc82);
+  }
+  .container {
+  width: 80%;
+  margin: auto;
+  } 
+  #home {
+  padding: 50px 0;
+  margin-top: 50px;
+  }
+  .about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .about-text {
+  padding: 30px;
+  flex: 1;
+  } 
+  #home h2 {
+  font-size: 32px;
+  color: #ffffff;
+  font-family: 'Shippori Antique', sans-serif;
+  margin-top: 100px;
+  }
+  #home p {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: justify;
+  font-family: 'Shippori Antique', sans-serif;
+  margin-top: 50px;
+  }
+  #home .hello {
+  font-size: 50px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background: linear-gradient( 90deg, #00ade1, #ffdd1c, #ff6492, #00dc82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  }
+  .tagcloud {
+  font-size: 24px;
+  font-weight: 650;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #00dc82;
+  margin-top: -20px;
+  margin-right: 50px;
+  }
+  .tagcloud--item:hover {
+  color: #ffdd1c;
+  }
+  .scroll {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  }
+  .scroll:hover {
+  -webkit-transform: scale(1.2) rotateZ(90deg);
+  -ms-transform: scale(1.2), rotateZ(90deg);
+  transform: scale(1.2) rotateZ(90deg);
+  transition: 0.5s;
+  }
+  /* ........ Projects........... */
+  .heading {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background-color: #ffdd1c;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 100px;
+  }
+  .work-container {
+  display: flex;
+  justify-content: space-between;
+  }
+  .work-img {
+  display: block;
+  }
+  .img-container {
+  position: relative;
+  margin: 30px;
+  }
+  .img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+  }
+  .img-content p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Shippori Antique', sans-serif;
+  }
+  .img-content a {
+  font-size: 20px;
+  text-decoration: none;
+  }
+  .img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+  }
+  .img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+  }
+  .img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+  }
+  .work-name {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Shippori Antique', sans-serif;
+  }
+  .btnTwo {
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ff6492;
+  border: none;
+  font-size: 16px;
+  width: 150px;
+  }
+  .btnTwo a {
+  color: #ffffff;
+  }
+  .btnTwo:hover {
+  transition: 0.3s ease-in-out; 
+  background: linear-gradient(90deg, #00dc82, #ffdd1c, #00dc82);
+  }
+  /* ........ About........... */
+  .header {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background-color: #ff6492;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  }
+  .diploms {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  flex: 1;
+  }
+  #back, #next {
+  font-size: 40px;
+  color: #f5f5f7;
+  background-color: #252839;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  }
+  .about-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  }
+  #about p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Shippori Antique', sans-serif;
+  text-align: justify;
+  }
+  /* ........ Contact Us........... */
+  #contact {
+  padding: 5rem 0;
+  }
+  .headerTwo {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background-color: #00dc82;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  }
+  #contact p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Shippori Antique', sans-serif;
+  }
+  form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  }
+  input, textarea {
+  border: #00dc82 2px solid;
+  margin: 10px;
+  width: 500px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #f5f5f7;
+  font-family: 'Shippori Antique', sans-serif;
+  }
+  textarea {
+  height: 200px;
+  }
+  .textMe {
+  display: flex;
+  justify-content: center;
+  }
+  hr {
+  background-color: #00dc82;
+  height: 5px;
+  border: 0;
+  }
+  #footer {
+  display: flex;
+  justify-content: center;
+  }
+  #footer h2 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Shippori Antique', sans-serif;
+  }
+  #up {
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  }
+  #up:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  }
+  #up.show {
+  opacity: 1;
+  visibility: visible;
+  }
+  /* ......../ media query /.......... */
+  @media (max-width: 800px) {
+  #home .hello {
+  font-size: 28px;
+  margin: 0;
+  }
+  #home h2 {
+  margin-top: 30px;
+  font-size: 18px;
+  }
+  #home p {
+  margin-top: 10px;
+  font-size: 14px;
+  }
+  .tagcloud {
+  font-size: 18px;
+  margin-top: -40px;
+  font-weight: 400;
+  margin-left: 50px;
+  }
+  .btn {
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+  }
+  .about-container {
+  flex-wrap: wrap;
+  }
+  .about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  #home {
+  margin-top: 10px;
+  }
+  .work-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .about-bpx {
+  width: 50%;
+  }
+  #pictures {
+  width: 400px;
+  }
+  .diploms {
+  margin-left: -20px;
+  margin-top: 50px;
+  justify-content: center;
+  }
+  #contact p {
+  margin-left: 10%;
+  margin-right: 10%;
+  } 
+  }
+  @media (max-width: 500px) {
+  .tagcloud {
+  font-size: 14px;
+  margin-left: 10px;
+  }
+  input, textarea {
+  width: 300px;
+  }
+  #pictures {
+  width: 200px;
+  }
+  #home .hello {
+  font-size: 22px;
+  }
+  .small{
+  width: 30px;
+  }
+  }
