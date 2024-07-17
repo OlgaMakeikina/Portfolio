@@ -6,6 +6,13 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+#language-selector {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  background-color: #ffdd1c;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
 
 #menu {
   top: 0;
