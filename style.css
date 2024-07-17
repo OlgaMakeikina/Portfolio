@@ -9,8 +9,8 @@ body {
 
 #menu {
   top: 0;
-  z-index: 1000; /* убедитесь, что выше других элементов, если необходимо */
-  background-color: #252839; /* цвет фона меню */
+  z-index: 1000; 
+  background-color: #252839; 
 }
 
 #menu-bar {

@@ -129,6 +129,17 @@ function loadTranslations(language) {
             document.getElementById('greeting').textContent = translations.greeting;
             document.getElementById('description').textContent = translations.description;
             document.getElementById('heading').textContent = translations.heading;
-        })
+            document.getElementById('btn_portfolio').textContent = translations.btn_portfolio;
+            document.getElementById('btn_contactMe').textContent = translations.btn_contactMe;
+            document.getElementById('header').textContent = translations.header;
+            document.getElementById('about_box_first_line').textContent = translations.about_box_first_line;
+            document.getElementById('about_box_second_line').textContent = translations.about_box_second_line;
+            document.getElementById('about_box_third_line').textContent = translations.about_box_third_line;
+            document.getElementById('headerTwo').textContent = translations.headerTwo;
+            document.getElementById('contact_description').textContent = translations.contact_description;
+            document.getElementById('message').textContent = translations.message;
+            document.getElementById('send_message').textContent = translations.send_message;
+            document.getElementById('footer_text').textContent = translations.footer_text;
+          })
         .catch(error => console.error('Error loading translations:', error));
 }

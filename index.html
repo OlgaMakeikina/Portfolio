@@ -21,16 +21,16 @@
          <nav class="nav" id="nav">
             <ul>
                <li style="--clr:#00ade1">
-                  <a class="link" href="#home" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                  <a class="link" href="#home" data-text="&nbsp;Home" onclick="menuOnClick()">&nbsp;Home&nbsp;</a>
                </li>
                <li style="--clr:#ff6492">
-                  <a class="link" href="#about" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+                  <a class="link" href="#about" data-text="&nbsp;About" onclick="menuOnClick()">&nbsp;About me&nbsp;</a>
                </li>
                <li style="--clr:#ffdd1c">
-                  <a class="link" href="#portfolio" data-text="&nbsp;Projects">&nbsp;Projects&nbsp;</a>
+                  <a class="link" href="#portfolio" data-text="&nbsp;Projects" onclick="menuOnClick()">&nbsp;Projects&nbsp;</a>
                </li>
                <li style="--clr:#00dc82">
-                  <a class="link" href="#contact" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                  <a class="link" href="#contact" data-text="&nbsp;Contact" onclick="menuOnClick()">&nbsp;Contacts&nbsp;</a>
                </li>
             </ul>
          </nav>
@@ -50,7 +50,7 @@
                <h2 id="greeting">My name is Olga Makeikina</h2>
                <p id="description">I am Frontend-developer</p>
                <div class="btn_box">
-               <a id="btn_portfolio" href="#portfolio"><button  class="btn">My portfolio</button></a>
+               <a  href="#portfolio"><button id="btn_portfolio" class="btn">My portfolio</button></a>
                <a href="https://telegram.me/Olga_makey"><button id="btn_contactMe" class="btn">Contact me</button></a>
             </div>
               
@@ -135,12 +135,12 @@
       </section>
 
       <section id="about">
-         <h2 class="header">ABOUT ME</h2>
+         <h2 id="header" class="header">ABOUT ME</h2>
          <div class="about-container container">
             <div class="about-box">
-               <p>I'm Olga and I'm a web developer.</p>
-               <p>My way in programming started after several years in banking.  Thanks to my previous experience, I possess analytic mind, I can search and systematize a large amount of information, in the same time understanding the importance of deadlines. </p>
-               <p> About 3 years ago I found myself in web development. Coding became my passion.
+               <p id="about_box_first_line">I'm Olga and I'm a web developer.</p>
+               <p id="about_box_second_line">My way in programming started after several years in banking.  Thanks to my previous experience, I possess analytic mind, I can search and systematize a large amount of information, in the same time understanding the importance of deadlines. </p>
+               <p id="about_box_third_line"> About 3 years ago I found myself in web development. Coding became my passion.
                   I love to create beautifully designed, intuitive, functional websites and apps.
                </p>
             </div>
@@ -153,8 +153,8 @@
       </section>
 
       <section id="contact">
-         <h2 class="headerTwo">CONTACT ME</h2>
-         <p>If you have any questions about my services, or just want to say hello, feel free to contact me.</p>
+         <h2 id="headerTwo" class="headerTwo">CONTACT ME</h2>
+         <p id="contact_description">If you have any questions about my services, or just want to say hello, feel free to contact me.</p>
          <form 
             action="https://formspree.io/f/xyyorblr"
             method="POST"
@@ -163,10 +163,10 @@
             <input type="email" name="email" placeholder="Email">
             </label>
             <label>
-            <textarea name="message" placeholder="Your message"></textarea>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
             </label>   
             <!-- your other form fields go here -->
-            <button class="btn" type="submit">Send message</button>
+            <button id="send_message" class="btn" type="submit">Send message</button>
          </form>
          <div class="textMe">
             <a title="Telegram" href="https://telegram.me/Olga_makey"><img src="telegram.png"></a>
@@ -176,8 +176,8 @@
     
       <hr width="80%">
       <footer id="footer">
-         <h2> &copy; 
-            Designed & built by Olga Makeikina, 2022
+         <h2 id="footer_text"> 
+            Designed & built by Olga Makeikina, 2024
          </h2>
       </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
