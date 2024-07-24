@@ -15,7 +15,7 @@ body {
 }
 
 #menu {
-  top: 0;
+  botom: 0;
   z-index: 1000; 
   background-color: #252839; 
 }
@@ -133,28 +133,20 @@ ul li a:hover::before {
   transform: translate(-60%,-30%);
 }
 
-.content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
   .btn {
-  padding: 10px;
-  width: 200px;
+  padding: 5px;
+  width: 150px;
   text-decoration: none;
   border-radius: 50px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 10px;
   text-transform: uppercase;
   color: #00dc82;
-
   background-color: transparent;
   border: #ff6492 2px solid;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Shippori Antique', sans-serif;
   }
   .btn a {
@@ -169,35 +161,31 @@ ul li a:hover::before {
 
   #home {
   padding: 50px 0;
-  }
-  .about-wrapper {
-  display: flex;
+  margin-bottom: 300px;
   }
   .about-text {
-  flex: 1;
-  } 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
 
-  #home h2 {
-  font-size: 32px;
-  color: #ffffff;
-  font-family: 'Shippori Antique', sans-serif;
-  }
-  #home p {
+  #description {
   font-size: 24px;
-  color: #ffffff;
-  text-align: justify;
+  color: #00ade1;
   font-family: 'Shippori Antique', sans-serif;
-  margin-top: 50px;
+  margin: 0;
   }
+
   #home .hello {
-  font-size: 50px;
+  font-size: 46px;
   font-family: 'Mochiy Pop One', sans-serif;
   background: linear-gradient( 90deg, #00ade1, #ffdd1c, #ff6492, #00dc82);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  text-align: center;
   }
   .tagcloud {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 650;
   font-family: 'Mochiy Pop One', sans-serif;
   color: #00dc82;
@@ -205,16 +193,7 @@ ul li a:hover::before {
   .tagcloud--item:hover {
   color: #ffdd1c;
   }
-  .scroll {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    }
-    .scroll:hover {
-    -webkit-transform: scale(1.2) rotateZ(90deg);
-    -ms-transform: scale(1.2), rotateZ(90deg);
-    transform: scale(1.2) rotateZ(90deg);
-    transition: 0.5s;
-    }
+
 
   /* ........ Projects........... */
   .heading {
@@ -227,19 +206,20 @@ ul li a:hover::before {
   margin-bottom: 100px;
   }
   .work-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
   }
   .item {
-    width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     height: 300px;
-    border: 1px solid #00dc82;
+    width: 300px;
     margin-bottom: 50px;
   }
-  .work-img {
-  display: block;
-  }
-
+  
   .img-container {
     position: relative;
     margin: 0px;   
@@ -248,6 +228,7 @@ ul li a:hover::before {
     justify-content:space-between;
     align-items: center;
     height: 300px;
+    border: 1px solid #00dc82;
     }
   .img-content {
   position: absolute;
@@ -353,7 +334,6 @@ ul li a:hover::before {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  flex-wrap: wrap;
   }
   #about p {
   color: #ffffff;
@@ -371,8 +351,43 @@ ul li a:hover::before {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   }
+  .contact_box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .contact_box_option p {
+    display: flex;
+    align-items: center;
+  }
+  .contact_box_option ul{
+    list-style: none;
+  }
+  .contact_box_option {
+  border: 1px solid #00dc82;
+  padding: 5px 50px;
+}
+  .contact_option a{
+    display: flex;
+    align-items: center;
+    color: #f1a1a1;
+    font-family: 'Shippori Antique', sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  .contact_option a:hover {
+    color: #ffffff;
+  }
+  .contact_option img {
+    margin-right: 10px; 
+    transition: filter 0.3s ease; 
+}
+
+.contact_option a:hover img {
+    filter: brightness(1.5); 
+}
   #contact p {
   color: #ffffff;
   text-align: center;
@@ -383,38 +398,30 @@ ul li a:hover::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 5px 50px;
+  background-color: #4a4c5e; 
+  border: 1px solid #00dc82;
+  border-left: none;
   }
   input, textarea {
-  border: #00dc82 2px solid;
   margin: 10px;
   width: 500px;
   padding: 10px;
   font-size: 20px;
-  background-color: #f5f5f7;
+  background-color: #252839;
   font-family: 'Shippori Antique', sans-serif;
+  color: #ffffff;
   }
   textarea {
   height: 200px;
   }
-  .textMe {
-  display: flex;
-  justify-content: center;
+  input:focus, textarea:focus {
+    border: 1px solid #00dc82; 
+    outline: none; 
   }
-  hr {
-  background-color: #00dc82;
-  height: 5px;
-  border: 0;
-  }
-  #footer {
-  display: flex;
-  justify-content: center;
-  }
-  #footer h2 {
-  color: #ffffff;
-  font-size: 14px;
-  font-family: 'Shippori Antique', sans-serif;
-  }
+#send_message {
+  margin: 10px;
+}
 
   #toTop {
     display: none;
@@ -426,12 +433,63 @@ ul li a:hover::before {
     z-index: 100;
 }
 
-.item {
+
+
+
+
+
+/* нижнее меню */
+
+.contact-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #252839;
+  color: #ffffff;
+  font-family: 'Shippori Antique', sans-serif;
+  text-align: center;
+  z-index: 1000;
+  border-top: #00dc82 1px solid;
   display: flex;
-  flex-direction: column;
+  margin-left: -10%;
+}
+
+.contact-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   align-items: center;
 }
 
+.contact-menu .find_me_in_link {
+  padding: 5px 10px;
+  border-left: #00dc82 1px solid;
+}
+
+.instagram {
+  border-right: #00dc82 1px solid;
+}
+.find_me_in {
+  margin-right: 20px;
+  padding: 5px 25px;
+}
+.last_item {
+  position: absolute;
+  right: 0;
+  padding: 5px; 
+}
+.contact-menu a {
+  color: white;
+  text-decoration: none;
+}
+.find_me_in_link img {
+  filter: grayscale(1) brightness(1) invert(0); 
+}
+.contact-menu .find_me_in_link img:hover {
+  transition: 0.3s ease-in-out; 
+  filter: invert(38%) sepia(73%) saturate(724%) hue-rotate(96deg) brightness(88%) contrast(82%); /* Цветовой фильтр */
+}
 
 
   /* ......../ media query /.......... */
@@ -445,6 +503,11 @@ ul li a:hover::before {
       flex-direction: column;
       align-items: center;
     }
+    .about-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0px;
+      }
 #home {
   padding: 0;
 }
@@ -473,7 +536,11 @@ ul li a:hover::before {
           margin-bottom: 330px;
           }
   }
-
+  @media (max-width: 912px) {
+    .contact_box {
+      flex-wrap: wrap;
+    }
+  }
   @media (max-width: 820px) {
   #home .hello {
   font-size: 28px;

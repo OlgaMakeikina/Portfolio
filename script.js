@@ -4,24 +4,16 @@ const myTags = [
   'Figma', 'GSAP', 'Flexbox', 'Ajax', 'Node.js', 'Redux', 'Github'
 ];
 
-function getAdaptiveRadius() {
-  // Настройте коэффициент в зависимости от ваших предпочтений
-  const factor = 0.3;
-  return Math.min(window.innerWidth, window.innerHeight) * factor;
-}
-
 function createTagCloud() {
-  const radius = getAdaptiveRadius();
+  const radius = 150;  // Set the radius to 200
   return TagCloud('.content', myTags, {
     radius: radius,
     maxSpeed: 'normal',
     initSpeed: 'slow',
-    direction: 135,
+    direction: 90,
     keep: true
   });
 }
-
-// Создаём начальное облако тегов
 let tagCloud = createTagCloud();
 
 // Обновляем облако тегов при изменении размера окна
@@ -65,7 +57,7 @@ window.addEventListener('resize', () => {
   
 
 
-  gsap.to("#myText", {duration: 3, text: "&lt&gt WELCOME &lt/&gt", delay: 2});
+  gsap.to("#myText", {duration: 3, text: "&lt&gt My name is Olga Makeikina &lt/&gt", delay: 2});
 
 
 

@@ -24,13 +24,13 @@
                   <a class="link" href="#home" data-text="&nbsp;Home" onclick="menuOnClick()">&nbsp;Home&nbsp;</a>
                </li>
                <li style="--clr:#ff6492">
-                  <a class="link" href="#about" data-text="&nbsp;About" onclick="menuOnClick()">&nbsp;About me&nbsp;</a>
+                  <a class="link" href="#about" data-text="&nbsp;About" onclick="menuOnClick()">&nbsp;About&nbsp;</a>
                </li>
                <li style="--clr:#ffdd1c">
                   <a class="link" href="#portfolio" data-text="&nbsp;Projects" onclick="menuOnClick()">&nbsp;Projects&nbsp;</a>
                </li>
                <li style="--clr:#00dc82">
-                  <a class="link" href="#contact" data-text="&nbsp;Contact" onclick="menuOnClick()">&nbsp;Contacts&nbsp;</a>
+                  <a class="link" href="#contact" data-text="&nbsp;Contact" onclick="menuOnClick()">&nbsp;Contact&nbsp;</a>
                </li>
             </ul>
          </nav>
@@ -45,23 +45,24 @@
          
       <section id="home">
          <div class="about-wrapper container">
+            
             <div class="about-text">
                <p id="myText" class="hello">HELLO</p>
-               <h2 id="greeting">My name is Olga Makeikina</h2>
-               <p id="description">I am Frontend-developer</p>
-               <div class="btn_box">
+               <h2 id="description">< I am Frontend-developer /></h2>
+             
+               <div class="content-box">
+             <span class="content"></span>
+            </div>
+
+            <div class="btn_box">
+                  <a  href="#portfolio"><button id="cv_donload" class="btn">My CV</button></a>
                <a  href="#portfolio"><button id="btn_portfolio" class="btn">My portfolio</button></a>
-               <a href="https://telegram.me/Olga_makey"><button id="btn_contactMe" class="btn">Contact me</button></a>
+               <a href="https://telegram.me/Olga_Makey"><button id="btn_contactMe" class="btn">Contact me</button></a>
             </div>
               
             </div>
             
-            <div class="content-box">
-             <span class="content"></span>
-            </div>
-         </div>
-         <div class="textMe">
-            <a class="scroll" href="#portfolio"><img class="small" src="10.png" width="50px"></a>
+            
          </div>
       </section>
 
@@ -230,6 +231,7 @@
                <p id="about_box_third_line"> About 3 years ago I found myself in web development. Coding became my passion.
                   I love to create beautifully designed, intuitive, functional websites and apps.
                </p>
+               <p id="about_box_fourth_line">I look forward to the opportunity to collaborate.</p>
             </div>
             <div class="diploms">
                <button id="back"><</button>
@@ -242,31 +244,53 @@
       <section id="contact">
          <h2 id="headerTwo" class="headerTwo">CONTACT ME</h2>
          <p id="contact_description">If you have any questions about my services, or just want to say hello, feel free to contact me.</p>
+         <div class="contact_box">
+              <div class="contact_box_option">
+               <p><img src="icons8-contacts-100.png" width="50px">Contacts</p>
+               <ul>
+                  <li class="contact_option"><a href="mailto:makeikina2202@gmail.com"><img src="icons8-mail-100.png" width="35px">makeikina2202@gmail.com</a></li>
+                     <li class="contact_option"> <a title="Telegram" href="https://telegram.me/Olga_Makey"><img src="icons8-telegram.svg" width="35px">My Telegram</a></li>
+                     <li class="contact_option"><a href="https://github.com/OlgaMakeikina"><img src="icons8-github.svg" width="35px">Github</a></li>
+                     <li class="contact_option"><a href="https://www.linkedin.com/in/olga-makeikina-37264031a/"><img src="icons8-linkedin.svg" width="35px">LinkedIn</a></li>
+                     <li class="contact_option"><a href="https://www.instagram.com/olgamakeykina?igsh=MWpldXB4MW56MnB6cw=="><img src="icons8-instagram.svg" width="35px">Instagram</a></li>
+               </ul>
+                
+                  <p><img src="icons8-news-100.png" width="50px">CV</p>
+                  <ul>
+                     <li class="contact_option"><a href="path/to/your/file.pdf" target="_blank"><img src="icons8-download-from-the-cloud.svg" width="35px">CV</a></li>
+                  </ul>
+               </div>
          <form 
             action="https://formspree.io/f/xyyorblr"
             method="POST"
             >
             <label>
-            <input type="email" name="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email...">
             </label>
             <label>
-            <textarea id="message" name="message" placeholder="Your message"></textarea>
+            <textarea placeholder="Your message..."></textarea>
             </label>   
             <!-- your other form fields go here -->
             <button id="send_message" class="btn" type="submit">Send message</button>
-         </form>
-         <div class="textMe">
-            <a title="Telegram" href="https://telegram.me/Olga_makey"><img src="telegram.png"></a>
+         </form>  
          </div>
       </section>
+      <footer id="footer"></footer>
+      <div class="contact-menu">
+         <ul>
+             <li class="find_me_in">Find me in:</li>
+             <li class="find_me_in_link"><a href="mailto:makeikina2202@gmail.com"><img src="icons8-mail-100.png" width="35px"> </a></li>
+             <li class="find_me_in_link"> <a href="https://telegram.me/Olga_Makey"><img src="icons8-telegram.svg" width="35px"></a></li>
+             <li class="find_me_in_link"><a href="https://www.linkedin.com/in/olga-makeikina-37264031a/"><img src="icons8-linkedin.svg" width="35px"></a></li>
+             <li class="find_me_in_link instagram"><a href="https://www.instagram.com/olgamakeykina?igsh=MWpldXB4MW56MnB6cw=="><img src="icons8-instagram.svg" width="35px"></a></li>
+             <li class="last_item">Designed & built by Olga Makeikina, 2024</li>
+             <li>
 
-    
-      <hr width="80%">
-      <footer id="footer">
-         <h2 id="footer_text"> 
-            Designed & built by Olga Makeikina, 2024
-         </h2>
+             </li>
+            </ul>
+     </div>
       </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>  
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
