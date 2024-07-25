@@ -12,6 +12,7 @@
    </head>
    <body>
       <button id="toTop" title="Up"><img src="up.png" width="50px"></button>
+     <header>
       <div id="menu">
          <div id="menu-bar" onclick="menuOnClick()">
             <div id="bar1" class="bar"></div>
@@ -36,35 +37,30 @@
          </nav>
       </div>
       <div class="menu-bg" id="menu-bg"></div>
-      <div>
-         <select id="language-selector">
-             <option value="en">Eng</option>
-             <option value="ru">Рус</option>
-         </select>
-     </div>
-         
-      <section id="home">
-         <div class="about-wrapper container">
-            
-            <div class="about-text">
-               <p id="myText" class="hello">HELLO</p>
-               <h2 id="description">< I am Frontend-developer /></h2>
-             
-               <div class="content-box">
-             <span class="content"></span>
-            </div>
+     </header>
+      
 
-            <div class="btn_box">
-                  <a  href="#portfolio"><button id="cv_donload" class="btn">My CV</button></a>
-               <a  href="#portfolio"><button id="btn_portfolio" class="btn">My portfolio</button></a>
-               <a href="https://telegram.me/Olga_Makey"><button id="btn_contactMe" class="btn">Contact me</button></a>
-            </div>
-              
-            </div>
-            
-            
+         
+     <section id="home">
+      <div class="about-wrapper container">
+         
+         <div class="about-text">
+            <p id="myText" class="hello">HELLO</p>
+            <h2 id="description">< I am Frontend-developer /></h2>
+         <div class="content-box">
+          <span class="content"></span>
          </div>
-      </section>
+
+         <div class="btn_box">
+            <a  href="#portfolio"><button class="btn">My portfolio</button></a>
+            <a href="https://telegram.me/Olga_Makey"><button class="btn">Contact me</button></a>
+         </div>
+           
+         </div>
+         
+         
+      </div>
+   </section>
 
       <section id="portfolio">
          <h2 id="heading" class="heading">MY PROJECTS</h2>
@@ -216,10 +212,6 @@
                   </div>
               </div>
             </div>
-
- 
- 
-
       </section>
 
       <section id="about">
@@ -257,7 +249,8 @@
                 
                   <p><img src="icons8-news-100.png" width="50px">CV</p>
                   <ul>
-                     <li class="contact_option"><a href="path/to/your/file.pdf" target="_blank"><img src="icons8-download-from-the-cloud.svg" width="35px">CV</a></li>
+                     <li class="contact_option"><a href="cv_eng.pdf" target="_blank"><img src="icons8-download-from-the-cloud.svg" width="35px">English</a></li>
+                     <li class="contact_option"><a href="cv_rus.pdf" target="_blank"><img src="icons8-download-from-the-cloud.svg" width="35px">Russian</a></li>
                   </ul>
                </div>
          <form 
