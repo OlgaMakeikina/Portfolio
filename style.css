@@ -3,7 +3,6 @@ html {
 }
 body {
   background-color: #252839;
-
 }
 
 #menu {
@@ -151,7 +150,6 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-align: center;
-  margin: auto;
   }
   .tagcloud {
   font-size: 16px;
@@ -465,6 +463,12 @@ body {
 
 
   /* ......../ media query /.......... */
+  @media (max-width: 19200px) {
+    #home .hello, #description  {
+     margin: auto;
+      }
+    }
+  
   @media (max-width: 1280px) {
  
     .about-wrapper {
@@ -627,6 +631,7 @@ input, textarea {
 
   @media (max-width: 431px) {
     #home .hello {
+      font-size: 28px;
       margin-top: 50px;
       }
     #pictures {
