@@ -49,32 +49,6 @@ window.addEventListener('click', function(event) {
       menuBg.classList.remove('change-bg');
   }
 });
-    
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-      // Функция для обработки клика
-      function handleLinkClick(selector, target) {
-        document.querySelector(selector).addEventListener('click', function (e) {
-          e.preventDefault();
-          gsap.to(window, {
-            duration: 1.5,
-            scrollTo: {
-              y: target,
-              offsetY: 70
-            }
-          });
-        });
-      }
-    
-      // Добавляем обработчики для ссылок
-      handleLinkClick('.link[href="#contact"]', "#contact");
-      handleLinkClick('.link[href="#home"]', "#home");
-      handleLinkClick('.link[href="#portfolio"]', "#portfolio");
-      handleLinkClick('.link[href="#about"]', "#about");
-    });
-
-  
 
 
   gsap.to("#myText", {duration: 3, text: "&lt&gt My name is Olga Makeikina &lt/&gt", delay: 2});
@@ -101,9 +75,6 @@ window.addEventListener('click', function(event) {
   })
 
 
-
-  // scroll to up
-
   const mybutton = document.querySelector("#toTop");
 
   window.addEventListener("scroll", function() {
@@ -122,15 +93,4 @@ window.addEventListener('click', function(event) {
   });
 
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const languageSelector = document.getElementById('language-selector');
-
-    languageSelector.addEventListener('change', (event) => {
-        const selectedLanguage = event.target.value;
-        loadTranslations(selectedLanguage);
-    });
-
-    // Load default language
-    loadTranslations('en');
-});
 
