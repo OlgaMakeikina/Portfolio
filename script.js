@@ -27,11 +27,28 @@ window.addEventListener('resize', function() {
 });
   
 
-  function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-    }
+function menuOnClick() {
+  const menu = document.getElementById('menu');
+  const nav = document.getElementById('nav');
+  const menuBg = document.getElementById('menu-bg');
+
+  menu.classList.toggle('change');
+  nav.classList.toggle('change');
+  menuBg.classList.toggle('change-bg');
+}
+
+window.addEventListener('click', function(event) {
+  const menu = document.getElementById('menu');
+  const nav = document.getElementById('nav');
+  const menuBg = document.getElementById('menu-bg');
+  const isClickInsideMenu = menu.contains(event.target);
+
+  if (!isClickInsideMenu) {
+      menu.classList.remove('change');
+      nav.classList.remove('change');
+      menuBg.classList.remove('change-bg');
+  }
+});
     
 
 
