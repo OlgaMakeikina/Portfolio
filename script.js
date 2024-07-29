@@ -4,8 +4,12 @@ const myTags = [
   'Figma', 'GSAP', 'Flexbox', 'Ajax', 'Node.js', 'Redux', 'Github'
 ];
 
+function getRadius() {
+  return window.innerWidth < 540 ? 150 : 200;
+}
+
 function createTagCloud() {
-  const radius = 180;  
+  const radius = getRadius();
   return TagCloud('.content', myTags, {
     radius: radius,
     maxSpeed: 'normal',
@@ -14,14 +18,13 @@ function createTagCloud() {
     keep: true
   });
 }
+
 let tagCloud = createTagCloud();
 
-// Обновляем облако тегов при изменении размера окна
-window.addEventListener('resize', () => {
-  tagCloud.destroy(); // Уничтожаем существующий экземпляр
-  tagCloud = createTagCloud(); // Создаём новый экземпляр с обновлённым радиусом
+window.addEventListener('resize', function() {
+  tagCloud.destroy();  
+  tagCloud = createTagCloud();  
 });
-
   
 
   function menuOnClick() {
@@ -63,7 +66,7 @@ window.addEventListener('resize', () => {
 
   const back = document.querySelector('#back');
   const next = document.querySelector('#next');
-  const photos = ["2.jpg", "3.jpg", "4.jpg"];
+  const photos = ["2.png", "3.jpg", "4.jpg"];
   let i=0;
   next.addEventListener('click', () => {
   i++;
